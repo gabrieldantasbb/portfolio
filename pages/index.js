@@ -1,5 +1,6 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
+import { Hero, AboutMe, TimeLine, Projects } from '../src/componets'
 
 export default function Home() {
   return (
@@ -12,7 +13,12 @@ export default function Home() {
         <meta name="author" content="Gabriel Dantas" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <main>Hello World!</main>
+      <main>
+        <Hero />
+        <AboutMe />
+        <TimeLine />
+        <Projects />
+      </main>
     </>
   );
 }
