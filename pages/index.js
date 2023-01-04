@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Hero, AboutMe, TimeLine, Projects } from "../src/componets";
+import { Hero, AboutMe, TimeLine, Projects } from "../src/components";
 
 export default function Home() {
   return (

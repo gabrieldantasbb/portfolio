@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   color: white;
-  padding-top: 2rem;
+  padding-top: 0.2rem;
   padding-bottom: 1rem;
 `;
 
