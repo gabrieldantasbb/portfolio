@@ -1,24 +1,29 @@
-import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { herobanner } from "../../assets/index";
-import { Button } from "../../Layouts/layout";
-import { CgFigma } from "react-icons/cg";
-import { BsInstagram, BsGithub, BsLinkedin, BsDribbble } from "react-icons/bs";
 
 import {
   Container,
   Div1,
   Div2,
   Div3,
+  Div4,
+  Img,
   P1,
+  P2,
+  P3,
+  P4,
+  Button1,
   Span,
   Text,
   Icon,
+  GithubIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  FigmaIcon,
+  DribbbleIcon
 } from "./HeroStyles";
 import { NavBar } from "../NavBar/NavBar";
-
-const style = { fontSize: "50px" }
 
 export const Hero = () => (
   <Section>
@@ -27,44 +32,42 @@ export const Hero = () => (
       <Div1>
         <Div2>
           <Text>
-            <P1 fontSize="59px">
+            <P1>
               <Span>Olá!</Span> Eu sou
             </P1>
-            <P1 fontSize="74px">
+            <P2>
               <Span>Gabriel Dantas</Span>
-            </P1>
-            <P1 fontSize="43px">Desenvolvedor Front-end</P1>
-            <P1 fontSize="35px">Seja bem vindo(a) ao meu site!</P1>
+            </P2>
+            <P3>Desenvolvedor Front-end</P3>
+            <P4>Seja bem vindo(a) ao meu site!</P4>
           </Text>
-          <Button>
+          <Button1>
             <p>SAIBA MAIS</p>
-          </Button>
+          </Button1>
         </Div2>
-        <div>
-          <Image
+        <Div4>
+          <Img
             src={herobanner}
-            width={514}
-            height={478}
             alt="photo of gabriel"
             priority="true"
           />
-        </div>
+        </Div4>
       </Div1>
       <Div3>
         <Icon>
-          <BsGithub style={style} />
+          <GithubIcon />
         </Icon>
         <Icon>
-          <BsLinkedin style={style} />
+          <LinkedinIcon />
         </Icon>
         <Icon>
-          <CgFigma style={style} />
+          <FigmaIcon />
         </Icon>
         <Icon>
-          <BsDribbble style={style} />
+          <DribbbleIcon />
         </Icon>
         <Icon>
-          <BsInstagram style={style} />
+          <InstagramIcon />
         </Icon>
       </Div3>
     </Container>

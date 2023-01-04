@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import { Hero, AboutMe, TimeLine, Projects } from "../src/components";
 
+import { Global } from "../styles/global";
+
 export default function Home() {
   return (
     <>
@@ -18,6 +20,7 @@ export default function Home() {
         />
         <meta name="author" content="Gabriel Dantas" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
       </Head>
       <main>
         <Hero />
@@ -25,6 +28,7 @@ export default function Home() {
         <TimeLine />
         <Projects />
       </main>
+      <Global />
     </>
   );
 }

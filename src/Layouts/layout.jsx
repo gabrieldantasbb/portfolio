@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { Global } from "../../styles/global"
+import { Global } from "../../styles/global";
 
 import { Footer } from "../components";
 
@@ -12,7 +12,6 @@ export default function layout({ children }) {
           <main>{children}</main>
           <Footer />
         </Container>
-        <Global />
       </ThemeProvider>
     </>
   );
@@ -21,22 +20,25 @@ export default function layout({ children }) {
 export const Container = styled.div`
   width: 100%;
   margin: auto;
-  font-family: ${ props => props.theme.font.poppins };
+  font-family: ${(props) => props.theme.font.poppins};
+
+
 `;
 
 export const Button = styled.button`
-width: 217px;
-height: 52px;
-border: 4px solid #FFFFFF;
-color: #FFFFFF;
-font-family: ${ props => props.theme.font.poppins };
-border-radius: 10px;
-font-weight: 600;
-font-size: 19px;
-background-color: inherit;
+  width: 217px;
+  height: 52px;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  font-family: ${(props) => props.theme.font.poppins};
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  background-color: inherit;
 `;
 
 const theme = {
+  // Colors for layout
   color: {
     orange: "#FF684F",
     orangelight: "#FF8E49",
@@ -44,7 +46,15 @@ const theme = {
     purplebrown: "#5D3546",
     coal: "#001C2F",
   },
-  font : {
-    poppins: "'Poppins', sans-serif"
-  }
+  // Temp fonts
+  font: {
+    poppins: "'Poppins', sans-serif",
+  },
+  // Breakpoints for responsive design
+  breakpoints: {
+    sm: "screen and (max-width: 640px)",
+    md: "screen and (max-width: 768px)",
+    lg: "screen and (max-width: 1024px)",
+    xl: "screen and (max-width: 1280px)",
+  },
 };

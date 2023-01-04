@@ -13,16 +13,20 @@ export const Container = styled.div`
 
 export const Div1 = styled.div`
   font-weight: 600;
-  font-size: 28px;
-  line-height: 42px;
+  font-size: 24px;
 `;
 
 export const Div2 = styled.div`
   display: flex;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 14px;
   gap: 62px;
+
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 12px;
+    gap: 14px;
+    text-align: right;
+  }
 `;
 
 export const Li = styled.li`
@@ -37,4 +41,5 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
+
 `;
