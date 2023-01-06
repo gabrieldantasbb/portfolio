@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { Global } from "../../styles/global";
 
 import { Footer } from "../components";
 
@@ -52,7 +51,7 @@ const theme = {
   },
   // Breakpoints for responsive design
   breakpoints: {
-    sm: "screen and (max-width: 640px)",
+    sm: "screen and (max-width: 767px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1024px)",
     xl: "screen and (max-width: 1280px)",

@@ -1,9 +1,14 @@
 import Image from "next/image";
 import styled from "styled-components";
-import { Button } from "../../Layouts/layout";
 
 import { CgFigma } from "react-icons/cg";
-import { BsInstagram, BsGithub, BsLinkedin, BsDribbble, BsLink } from "react-icons/bs";
+import {
+  BsInstagram,
+  BsGithub,
+  BsLinkedin,
+  BsDribbble,
+  BsLink,
+} from "react-icons/bs";
 
 export const Container = styled.div`
   max-width: 1280px;
@@ -14,26 +19,15 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
+  padding: 2rem 1rem 1rem 1rem;
 `;
 
 export const Div1 = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
-  gap: 10rem;
-
   @media ${(props) => props.theme.breakpoints.sm} {
-    flex-direction: column-reverse;
-    margin-top: 1rem;
-    gap: 1rem;
+    flex-wrap: wrap-reverse;
   }
 `;
 
@@ -41,6 +35,7 @@ export const Div2 = styled.div`
   display: flex;
   flex-direction: column;
   font-weight: 700;
+  justify-content: center;
 `;
 
 export const Text = styled.div`
@@ -83,7 +78,17 @@ export const Span = styled.span`
   color: ${(props) => props.theme.color.orangelight};
 `;
 
-export const Button1 = styled(Button)`
+export const Button1 = styled.button`
+  width: 217px;
+  height: 52px;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  font-family: ${(props) => props.theme.font.poppins};
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 19px;
+  background-color: inherit;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 117px;
     height: 42px;
@@ -93,19 +98,17 @@ export const Button1 = styled(Button)`
 `;
 
 export const Div3 = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
+`;
+
+export const Div4 = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
-`;
-
-export const Div4 = styled.div`
-  display: flex;
-  justify-content: center;
-  @media ${(props) => props.theme.breakpoints} {
-  }
 `;
 
 export const Img = styled(Image)`

@@ -1,0 +1,136 @@
+import Image from "next/image";
+import styled from "styled-components";
+
+export const Container = styled.div`
+  max-width: 1208px;
+  width: 100%;
+  margin: auto;
+  padding: 3rem 1rem 7rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+`;
+
+export const Div1 = styled.div`
+  width: 100%;
+  justify-content: center;
+`;
+
+export const Title = styled.h3`
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.205em;
+  color: ${(props) => props.theme.color.purplebrown};
+`;
+
+export const Subtitle = styled.h3`
+  font-size: 24px;
+  text-align: center;
+  color: ${(props) => props.theme.color.coal};
+`;
+
+export const Div2 = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    gap: 1rem;
+  }
+`;
+
+export const Img1 = styled(Image)``;
+
+export const Div3 = styled.div`
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+`;
+
+export const P1 = styled.p`
+  font-size: medium;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: small;
+  }
+`;
+
+export const Div4 = styled.div`
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+`;
+
+export const Perfil = styled.div``;
+
+export const PerfilItem = styled.div`
+  margin-bottom: 1rem;
+`;
+
+export const H2 = styled.h2`
+  font-size: 18px;
+  color: ${(props) => props.theme.color.coal};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 12px;
+  }
+`;
+
+export const H3 = styled.h3`
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 1rem;
+  letter-spacing: 0.205em;
+  color: ${(props) => props.theme.color.coal};
+  text-transform: uppercase;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 12px;
+  }
+`;
+
+export const P2 = styled.p`
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.205em;
+  color: ${(props) => props.theme.color.coal};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 11px;
+    width: 90%;
+  }
+`;
+
+export const Button = styled.button`
+  width: 150px;
+  height: 30px;
+  margin-top: 1rem;
+  padding: 2px;
+  background: ${(props) => props.theme.color.purplebrown};
+  border-radius: 30px;
+  border-style: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.105em;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 120px;
+    height: 25px;
+    font-size: 11px;
+  }
+`;
+
+export const Skills = styled.div``;
+
+export const ProgressBar = styled.progress`
+  border-radius: 2rem;
+  height: 19px;
+
+`;

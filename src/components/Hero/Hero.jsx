@@ -45,15 +45,15 @@ export const Hero = () => (
             <p>SAIBA MAIS</p>
           </Button1>
         </Div2>
-        <Div4>
+        <Div3>
           <Img
             src={herobanner}
             alt="photo of gabriel"
             priority="true"
           />
-        </Div4>
+        </Div3>
       </Div1>
-      <Div3>
+      <Div4>
         <Icon>
           <GithubIcon />
         </Icon>
@@ -69,7 +69,7 @@ export const Hero = () => (
         <Icon>
           <InstagramIcon />
         </Icon>
-      </Div3>
+      </Div4>
     </Container>
   </Section>
 );
