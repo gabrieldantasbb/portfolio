@@ -15,7 +15,7 @@ import {
   P2,
   Perfil,
   PerfilItem,
-  ProgressBar,
+  Progressbar,
   Skills,
   Subtitle,
   Title,
@@ -57,11 +57,10 @@ export const AboutMe = () => (
         <Skills>
           <H2>ALGUMAS SKILLS</H2>
           {skills.map((nav, index) => (
-            <div id={index}>
+            <Skills id={index}>
               <H3>{nav.title}:</H3>
-              <p>{nav.level}</p>
-              <ProgressBar max={10} value={nav.level}></ProgressBar>
-            </div>
+              <Progressbar level={nav.level} />
+            </Skills>
           ))}
           <H2>CONFIRA MINHAS SOFT SKILLS</H2>
           <Button>soft skills</Button>

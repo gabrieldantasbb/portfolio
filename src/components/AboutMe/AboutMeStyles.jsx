@@ -66,6 +66,12 @@ export const Div4 = styled.div`
   display: flex;
   margin-top: 1rem;
   justify-content: space-evenly;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 `;
 
 export const Perfil = styled.div``;
@@ -127,10 +133,43 @@ export const Button = styled.button`
   }
 `;
 
-export const Skills = styled.div``;
+export const Skills = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
 
-export const ProgressBar = styled.progress`
-  border-radius: 2rem;
-  height: 19px;
+    &:h3 {
+      font-size: 19px;
+    }
+  }
+`;
 
+export const Progressbar = styled.div`
+  margin-top: 0.5rem;
+  position: relative;
+  width: 300px;
+  max-width: calc(100% - 1rem);
+  height: 1.3em;
+  background-color: white;
+  border: 0.2em solid;
+  border-color: black;
+  border-radius: 1.5em;
+  color: white;
+
+  &:before {
+    content: "";
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.1em;
+    top: 0.1em;
+    bottom: 0.1em;
+    width: ${(props) => props.level}%;
+    min-width: 2em;
+    max-width: calc(100% - 0.2em);
+    border-radius: 1.5em;
+    background-color: ${(props) => props.theme.color.orange};
+  }
+`;
+
+export const Progress = styled.div`
+  display: block;
 `;

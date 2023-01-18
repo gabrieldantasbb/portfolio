@@ -23,50 +23,50 @@ export const perfil = [
 export const skills = [
     {
         title: 'WEB (HTML + CSS + JAVASCRIPT):',
-        level: 9
+        level: 90
     },
     {
         title: 'TYPERSCRIPT',
-        level: 7
+        level: 70
     },
     {
         title: 'REACT',
-        level: 8
+        level: 80
     },
     {
         title: 'API REST',
-        level: 7
+        level: 70
     },
     {
         title: 'JWT',
-        level: 3
+        level: 30
     },
     {
         title: 'GRAPHQL',
-        level: 3
+        level: 30
     },
     {
         title: 'REACT NATIVE',
-        level: 4
+        level: 40
     },
     {
         title: 'FLUTTER',
-        level: 3
+        level: 30
     },
     {
         title: 'PHP',
-        level: 5
+        level: 50
     },
     {
         title: 'POSTGRESQL',
-        level: 4
+        level: 40
     },
     {
         title: 'FIREBASE',
-        level: 3
+        level: 30
     },
     {
         title: 'GIT',
-        level: 8
+        level: 80
     },
 ]
