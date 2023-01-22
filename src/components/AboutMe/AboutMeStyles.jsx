@@ -25,12 +25,20 @@ export const Title = styled.h3`
   text-align: center;
   letter-spacing: 0.205em;
   color: ${(props) => props.theme.color.purplebrown};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 11px;
+  }
 `;
 
 export const Subtitle = styled.h3`
   font-size: 24px;
   text-align: center;
   color: ${(props) => props.theme.color.coal};
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+  }
 `;
 
 export const Div2 = styled.div`
@@ -43,10 +51,13 @@ export const Div2 = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     gap: 1rem;
+    flex-wrap: wrap;
   }
 `;
 
-export const Img1 = styled(Image)``;
+export const Img1 = styled(Image)`
+margin-top: 1rem;
+`;
 
 export const Div3 = styled.div`
   max-width: 500px;
@@ -58,13 +69,13 @@ export const P1 = styled.p`
   font-size: medium;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: small;
+    font-size: 11px;
   }
 `;
 
 export const Div4 = styled.div`
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
   justify-content: space-evenly;
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -98,7 +109,7 @@ export const H3 = styled.h3`
   text-transform: uppercase;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 12px;
+    font-size: 0.6em;
   }
 `;
 
@@ -133,9 +144,28 @@ export const Button = styled.button`
   }
 `;
 
-export const Skills = styled.div`
-  @media ${(props) => props.theme.breakpoints.sm} {
+export const Div5 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+`;
 
+export const SkillArea = styled.div`
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    &:h3 {
+      font-size: 19px;
+    }
+  }
+`;
+
+export const Skill = styled.div`
+  @media ${(props) => props.theme.breakpoints.sm} {
     &:h3 {
       font-size: 19px;
     }
@@ -149,7 +179,7 @@ export const Progressbar = styled.div`
   max-width: calc(100% - 1rem);
   height: 1.3em;
   background-color: white;
-  border: 0.2em solid;
+  border: 2px solid;
   border-color: black;
   border-radius: 1.5em;
   color: white;
@@ -167,6 +197,13 @@ export const Progressbar = styled.div`
     max-width: calc(100% - 0.2em);
     border-radius: 1.5em;
     background-color: ${(props) => props.theme.color.orange};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 150px;
+    height: 1em;
+    border: 0.1em solid;
+    border-color: black;
   }
 `;
 

@@ -2,13 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 
 import { CgFigma } from "react-icons/cg";
-import {
-  BsInstagram,
-  BsGithub,
-  BsLinkedin,
-  BsDribbble,
-  BsLink,
-} from "react-icons/bs";
+import { BsInstagram, BsGithub, BsLinkedin, BsDribbble } from "react-icons/bs";
 
 export const Container = styled.div`
   max-width: 1280px;
@@ -36,6 +30,10 @@ export const Div2 = styled.div`
   flex-direction: column;
   font-weight: 700;
   justify-content: center;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    align-items: flex-end;
+  }
 `;
 
 export const Text = styled.div`
@@ -88,12 +86,13 @@ export const Button1 = styled.button`
   font-weight: 600;
   font-size: 19px;
   background-color: inherit;
+  justify-self: center;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 117px;
-    height: 42px;
-    border: 3px solid #ffffff;
-    font-size: 12px;
+    width: 7rem;
+    height: 2rem;
+    border: 2px solid #ffffff;
+    font-size: .6em;
   }
 `;
 
@@ -109,6 +108,11 @@ export const Div4 = styled.div`
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Img = styled(Image)`
@@ -138,7 +142,7 @@ export const GithubIcon = styled(BsGithub)`
   font-size: 40px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
 
@@ -146,7 +150,7 @@ export const InstagramIcon = styled(BsInstagram)`
   font-size: 40px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
 
@@ -154,7 +158,7 @@ export const LinkedinIcon = styled(BsLinkedin)`
   font-size: 40px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
 
@@ -162,7 +166,7 @@ export const DribbbleIcon = styled(BsDribbble)`
   font-size: 40px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;
 
@@ -170,6 +174,6 @@ export const FigmaIcon = styled(CgFigma)`
   font-size: 40px;
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 30px;
+    font-size: 25px;
   }
 `;

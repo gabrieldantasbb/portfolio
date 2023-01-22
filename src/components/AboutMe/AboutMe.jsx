@@ -8,6 +8,7 @@ import {
   Div2,
   Div3,
   Div4,
+  Div5,
   H2,
   H3,
   Img1,
@@ -16,7 +17,8 @@ import {
   Perfil,
   PerfilItem,
   Progressbar,
-  Skills,
+  Skill,
+  SkillArea,
   Subtitle,
   Title,
 } from "./AboutMeStyles";
@@ -46,7 +48,7 @@ export const AboutMe = () => (
         <Perfil>
           <H2>PERFIL</H2>
           {perfil.map((nav, index) => (
-            <PerfilItem id={index}>
+            <PerfilItem key={index}>
               <H3>{nav.title}:</H3>
               <P2>{nav.text}</P2>
             </PerfilItem>
@@ -54,17 +56,19 @@ export const AboutMe = () => (
           <H2>BAIXAR CURRÍCULO (PDF)</H2>
           <Button>resume</Button>
         </Perfil>
-        <Skills>
+        <Div5>
           <H2>ALGUMAS SKILLS</H2>
-          {skills.map((nav, index) => (
-            <Skills id={index}>
-              <H3>{nav.title}:</H3>
-              <Progressbar level={nav.level} />
-            </Skills>
-          ))}
-          <H2>CONFIRA MINHAS SOFT SKILLS</H2>
-          <Button>soft skills</Button>
-        </Skills>
+          <SkillArea>
+            {skills.map((nav, index) => (
+              <Skill key={index}>
+                <H3>{nav.title}:</H3>
+                <Progressbar level={nav.level} />
+              </Skill>
+            ))}
+          </SkillArea>
+          {/*/*<H2>CONFIRA MINHAS SOFT SKILLS</H2>
+          <Button>soft skills</Button>*/}
+        </Div5>
       </Div4>
     </Container>
   </Section>
