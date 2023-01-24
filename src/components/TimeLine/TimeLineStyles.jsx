@@ -56,16 +56,18 @@ export const Div2 = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 2rem;
 `;
 
 export const LinePoint = styled.div`
   display: flex;
-
+  min-width: 100%;
+  justify-content: center;
 `;
 
 export const Div3 = styled.div`
   display: flex;
-  width: 496px;
+  width: 500px;
   flex-direction: column;
   text-align: right;
   gap: 0.5rem;
@@ -73,24 +75,24 @@ export const Div3 = styled.div`
 
 export const H2 = styled.h3`
   font-weight: 600;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
 `;
 
 export const Img = styled(Image)`
-  height: 325px;
-  width: 70px;
+  height: 250px;
 `;
 
 export const Div4 = styled.div`
   display: flex;
+  width: 500px;
   flex-direction: column;
   text-align: left;
   gap: 0.5rem;
 `;
 
 export const Description = styled.p`
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.205em;
